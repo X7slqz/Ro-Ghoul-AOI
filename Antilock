@@ -33,7 +33,7 @@
                            getgenv().Desync = true
                            game.StarterGui:SetCore("SendNotification", {
                                Title = "BloodSeek . antilock";
-                               Text = "anti on by";
+                               Text = "anti on by X7slqz";
                                Icon = "rbxassetid://13247795001";
                                Duration = 5;
                                })
@@ -41,7 +41,7 @@
                            getgenv().Desync = false
                            game.StarterGui:SetCore("SendNotification", {
                                Title = "BloodSeek . antilock";
-                               Text = "anti off by";
+                               Text = "anti off X7slqz";
                                Icon = "rbxassetid://13247795001";
                                Duration = 5;
                                })
