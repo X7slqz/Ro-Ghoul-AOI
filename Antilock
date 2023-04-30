@@ -1,54 +1,54 @@
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Aim%20Viewer"))()
 
-           getgenv().Desync = false -- leave this on false
-           getgenv().KeyBind = Enum.KeyCode.M
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Aim%20Viewer"))()
 
-                      getgenv().DirectionToShoot = "Up"
+getgenv().Desync = false -- leave this on false
+getgenv().KeyBind = Enum.KeyCode.z
 
-                      --[[
+getgenv().DirectionToShoot = "up"
 
-                                 OPTIONS
+--[[
 
+           OPTIONS
+        
 
-                                 Behind
-                                 Down -- can easily be resolved with underground resolver
-                                 ForWard
-                                 Left
-                                 One
-                                 Right
-                                 Up -- can easily be resolved with underground resolver
-                                 Zero
-                      --]]
-
-
-
+           Behind
+           Down -- can easily be resolved with underground resolver
+           ForWard
+           Left
+           One
+           Right
+           Up -- can easily be resolved with underground resolver
+           Zero
+--]]
 
 
 
-           local uis = game:service'UserInputService'
-           local uppertext = newtext.UpperText
-           uis.InputBegan:Connect(
-               function(a, t)
-                   if not t then
-                       if a.KeyCode == getgenv().KeyBind and getgenv().Desync == false then
-                           getgenv().Desync = true
-                           game.StarterGui:SetCore("SendNotification", {
-                               Title = "BloodSeek";
-                               Text = "anti on";
-                               Icon = "rbxassetid://13247795016";
-                               Duration = 5;
-                               })
-                           elseif a.KeyCode == getgenv().KeyBind and getgenv().Desync == true then
-                           getgenv().Desync = false
-                           game.StarterGui:SetCore("SendNotification", {
-                               Title = "BloodSeek";
-                               Text = "anti off";
-                               Icon = "rbxassetid://13247795016";
-                               Duration = 5;
-                               })
-                       end
-                   end
-           end)
+
+
+
+local uis = game:service'UserInputService'
+uis.InputBegan:Connect(
+    function(a, t)
+        if not t then
+            if a.KeyCode == getgenv().KeyBind and getgenv().Desync == false then
+                getgenv().Desync = true
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "BloodSeek";
+                    Text = "anti on";
+                    Icon = "rbxassetid://13247795016";
+                    Duration = 5;
+                    })
+                elseif a.KeyCode == getgenv().KeyBind and getgenv().Desync == true then
+                getgenv().Desync = false
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "BloodSeek";
+                    Text = "anti off";
+                    Icon = "rbxassetid://13247795016";
+                    Duration = 5;
+                    })
+            end
+        end
+end)
 
 getgenv().Direction = nil
 
