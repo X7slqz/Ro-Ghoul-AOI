@@ -1,4 +1,3 @@
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Aim%20Viewer"))()
 
 getgenv().Desync = false -- leave this on false
@@ -35,7 +34,7 @@ uis.InputBegan:Connect(
                 game.StarterGui:SetCore("SendNotification", {
                     Title = "BloodSeek";
                     Text = "anti on";
-                    Icon = "rbxassetid://13247795016";
+                    Icon = "rbxassetid:/13247795016";
                     Duration = 5;
                     })
                 elseif a.KeyCode == getgenv().KeyBind and getgenv().Desync == true then
