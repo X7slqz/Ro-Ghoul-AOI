@@ -60,7 +60,7 @@ local oop = tab:AddSlider('สปีดแม่อ้อย', function(a)
     sped = tonumber(a)
 end, {
     ["min"] = 0,
-    ["max"] = 120,
+    ["max"] =200,
 })
 oop:Set(100)
 tab:AddSlider('ระยะห่างแม่อ้อย', function(a)
